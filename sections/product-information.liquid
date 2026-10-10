@@ -27,7 +27,8 @@
 {% render 'deferred-media-product-model-styles' %}
 {% render 'deferred-media-video-styles' %}
 
-{% if section.settings.enable_sticky_add_to_cart %}
+{% assign cober_spa_collections = closest.product.collections | where: 'handle', 'spa-chuyen-sau' %}
+{% if section.settings.enable_sticky_add_to_cart and cober_spa_collections.size == 0 %}
   {% render 'fly-to-cart-styles' %}
 
   {% liquid

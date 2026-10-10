@@ -134,6 +134,7 @@
     endif
   endif
   capture search
+    assign search_class = search_class | append: ' search-action--primary'
     render 'search', style: search_style, class: search_class, display_style: section.settings.actions_display_style
   endcapture
 
@@ -336,6 +337,94 @@
     "url": {{ request.origin | append: page.url | json }}
   }
 </script>
+
+{% style %}
+  @media screen and (max-width: 749px) {
+    #header-component .header__columns {
+      grid-template-columns: 44px minmax(0, 1fr) 44px !important;
+      grid-template-areas: 'leftA center rightB' !important;
+      align-items: center;
+      column-gap: 0;
+    }
+
+    #header-component .header__columns .header-logo {
+      grid-area: center !important;
+      justify-self: center;
+      align-self: center;
+    }
+
+    #header-component .header__columns .header__drawer {
+      grid-area: leftA !important;
+    }
+
+    #header-component .header__column > header-actions:not(:has(.header-actions__cart-icon--has-cart)),
+    #header-component .header__column > header-actions .account-button {
+      display: none !important;
+    }
+
+    #header-component .header__columns:has(.header__column > header-actions .header-actions__cart-icon--has-cart) {
+      grid-template-columns: 44px 44px minmax(0, 1fr) 44px 44px !important;
+      grid-template-areas: 'leftA leftB center rightA rightB' !important;
+    }
+
+    #header-component .header__column > header-actions {
+      grid-area: rightB !important;
+      margin-inline-start: 0;
+    }
+
+    #header-component .header__columns .search-action {
+      grid-area: rightB !important;
+      justify-self: end;
+      align-self: center;
+      margin-inline: 0;
+    }
+
+    #header-component .header__columns:has(.header__column > header-actions .header-actions__cart-icon--has-cart) .search-action {
+      grid-area: rightA !important;
+    }
+
+    #header-component:has(.search-action--hidden-on-menu) .search-action--primary {
+      display: none !important;
+    }
+  }
+
+  .menu-drawer__mobile-actions { display: none; }
+  @media screen and (max-width: 749px) {
+    #header-component .header__drawer[data-hydration-key='header-drawer-mobile'] :is(
+      .menu-drawer__menu-item,
+      .menu-drawer__mobile-action,
+      .menu-drawer__title,
+      .menu-drawer__back-button
+    ) {
+      font-family: var(--font-body--family);
+      font-size: 1rem;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    #header-component .menu-drawer__mobile-actions {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-xs);
+      padding: var(--padding-md) var(--padding-xl);
+    }
+    #header-component .menu-drawer__mobile-action {
+      display: flex;
+      align-items: center;
+      gap: var(--gap-sm);
+      min-height: 44px;
+      color: inherit;
+      text-decoration: none;
+    }
+    #header-component .menu-drawer__mobile-action .svg-wrapper {
+      width: var(--icon-size-sm);
+      height: var(--icon-size-sm);
+    }
+  }
+{% endstyle %}
 
 <header-component
   id="header-component"

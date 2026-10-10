@@ -36,6 +36,10 @@
   endif
 %}
 
+{% assign cober_spa_collections = product.collections | where: 'handle', 'spa-chuyen-sau' %}
+{% if cober_spa_collections.size > 0 %}
+  {% render 'cober-consultation-actions', product: product, block: block, consultation_kind: 'service' %}
+{% else %}
 <span
   class="buy-buttons-block buy-buttons-block--{{ block.id }}"
   {% if block_settings.text_color != blank %}
@@ -382,6 +386,8 @@
 {% endif %}
 
 {% render 'buy-buttons-styles' %}
+
+{% endif %}
 
 {% schema %}
 {

@@ -1,0 +1,132 @@
+{%- comment -%}Mobile-only photo variants. Fall back to the original after any image replacement.{%- endcomment -%}
+{%- assign original_url = image | image_url: width: 1 -%}
+{%- assign image_key = original_url | split: '?' | first | split: '/' | last -%}
+{%- assign image_version = original_url | split: 'v=' | last | split: '&' | first -%}
+{%- case image_key -%}
+{%- when 'Oxford_Full_Brogues-9.jpg' -%}
+{%- if image_version == '1789658298' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-34ca261e7a9a-832.avif' | asset_url }} 832w, {{ 'cober-mobile-34ca261e7a9a-1200.avif' | asset_url }} 1200w, {{ 'cober-mobile-34ca261e7a9a-1600.avif' | asset_url }} 1600w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-34ca261e7a9a-832.webp' | asset_url }} 832w, {{ 'cober-mobile-34ca261e7a9a-1200.webp' | asset_url }} 1200w, {{ 'cober-mobile-34ca261e7a9a-1600.webp' | asset_url }} 1600w
+">
+{%- endif -%}
+{%- when '1789665001821_1932433282087883453_2491859023578066936_f9da6c5010962776462dbf535efa8834.jpg' -%}
+{%- if image_version == '1789665064' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-e4e23785acea-352.avif' | asset_url }} 352w, {{ 'cober-mobile-e4e23785acea-480.avif' | asset_url }} 480w, {{ 'cober-mobile-e4e23785acea-600.avif' | asset_url }} 600w, {{ 'cober-mobile-e4e23785acea-832.avif' | asset_url }} 832w, {{ 'cober-mobile-e4e23785acea-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-e4e23785acea-352.webp' | asset_url }} 352w, {{ 'cober-mobile-e4e23785acea-480.webp' | asset_url }} 480w, {{ 'cober-mobile-e4e23785acea-600.webp' | asset_url }} 600w, {{ 'cober-mobile-e4e23785acea-832.webp' | asset_url }} 832w, {{ 'cober-mobile-e4e23785acea-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- when '1789664531503_1932433282087883453_2491859023578066936_16629b8d1a6a623514ea61a662d6e73a.jpg' -%}
+{%- if image_version == '1789664589' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-acfb5a0f9ccd-352.avif' | asset_url }} 352w, {{ 'cober-mobile-acfb5a0f9ccd-480.avif' | asset_url }} 480w, {{ 'cober-mobile-acfb5a0f9ccd-600.avif' | asset_url }} 600w, {{ 'cober-mobile-acfb5a0f9ccd-832.avif' | asset_url }} 832w, {{ 'cober-mobile-acfb5a0f9ccd-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-acfb5a0f9ccd-352.webp' | asset_url }} 352w, {{ 'cober-mobile-acfb5a0f9ccd-480.webp' | asset_url }} 480w, {{ 'cober-mobile-acfb5a0f9ccd-600.webp' | asset_url }} 600w, {{ 'cober-mobile-acfb5a0f9ccd-832.webp' | asset_url }} 832w, {{ 'cober-mobile-acfb5a0f9ccd-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- when '1789663727770_1932433282087883453_2491859023578066936_bd905b2a04985577f3c0001a8db39826.jpg' -%}
+{%- if image_version == '1789663815' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-3273955b33a1-352.avif' | asset_url }} 352w, {{ 'cober-mobile-3273955b33a1-480.avif' | asset_url }} 480w, {{ 'cober-mobile-3273955b33a1-600.avif' | asset_url }} 600w, {{ 'cober-mobile-3273955b33a1-832.avif' | asset_url }} 832w, {{ 'cober-mobile-3273955b33a1-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-3273955b33a1-352.webp' | asset_url }} 352w, {{ 'cober-mobile-3273955b33a1-480.webp' | asset_url }} 480w, {{ 'cober-mobile-3273955b33a1-600.webp' | asset_url }} 600w, {{ 'cober-mobile-3273955b33a1-832.webp' | asset_url }} 832w, {{ 'cober-mobile-3273955b33a1-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- when 'OxfordFullBrogues-1.jpg' -%}
+{%- if image_version == '1789658947' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-7703e039b022-352.avif' | asset_url }} 352w, {{ 'cober-mobile-7703e039b022-480.avif' | asset_url }} 480w, {{ 'cober-mobile-7703e039b022-600.avif' | asset_url }} 600w, {{ 'cober-mobile-7703e039b022-832.avif' | asset_url }} 832w, {{ 'cober-mobile-7703e039b022-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-7703e039b022-352.webp' | asset_url }} 352w, {{ 'cober-mobile-7703e039b022-480.webp' | asset_url }} 480w, {{ 'cober-mobile-7703e039b022-600.webp' | asset_url }} 600w, {{ 'cober-mobile-7703e039b022-832.webp' | asset_url }} 832w, {{ 'cober-mobile-7703e039b022-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- when 'be2149f8dda05dfe04b1.jpg' -%}
+{%- if image_version == '1789808892' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-b78a181b7054-832.avif' | asset_url }} 832w, {{ 'cober-mobile-b78a181b7054-1200.avif' | asset_url }} 1200w, {{ 'cober-mobile-b78a181b7054-1600.avif' | asset_url }} 1600w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-b78a181b7054-832.webp' | asset_url }} 832w, {{ 'cober-mobile-b78a181b7054-1200.webp' | asset_url }} 1200w, {{ 'cober-mobile-b78a181b7054-1600.webp' | asset_url }} 1600w
+">
+{%- endif -%}
+{%- when 'afb7a336c14641181857.jpg' -%}
+{%- if image_version == '1790958820' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-fcd0e8106cb0-352.avif' | asset_url }} 352w, {{ 'cober-mobile-fcd0e8106cb0-480.avif' | asset_url }} 480w, {{ 'cober-mobile-fcd0e8106cb0-600.avif' | asset_url }} 600w, {{ 'cober-mobile-fcd0e8106cb0-832.avif' | asset_url }} 832w, {{ 'cober-mobile-fcd0e8106cb0-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-fcd0e8106cb0-352.webp' | asset_url }} 352w, {{ 'cober-mobile-fcd0e8106cb0-480.webp' | asset_url }} 480w, {{ 'cober-mobile-fcd0e8106cb0-600.webp' | asset_url }} 600w, {{ 'cober-mobile-fcd0e8106cb0-832.webp' | asset_url }} 832w, {{ 'cober-mobile-fcd0e8106cb0-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- when '1790876152972_1932433282087883453_2491859023578066936_9fb3b99ba9bc57304856caa56ece0de0.jpg' -%}
+{%- if image_version == '1790876247' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-1d631d9bb1ff-352.avif' | asset_url }} 352w, {{ 'cober-mobile-1d631d9bb1ff-480.avif' | asset_url }} 480w, {{ 'cober-mobile-1d631d9bb1ff-600.avif' | asset_url }} 600w, {{ 'cober-mobile-1d631d9bb1ff-832.avif' | asset_url }} 832w, {{ 'cober-mobile-1d631d9bb1ff-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-1d631d9bb1ff-352.webp' | asset_url }} 352w, {{ 'cober-mobile-1d631d9bb1ff-480.webp' | asset_url }} 480w, {{ 'cober-mobile-1d631d9bb1ff-600.webp' | asset_url }} 600w, {{ 'cober-mobile-1d631d9bb1ff-832.webp' | asset_url }} 832w, {{ 'cober-mobile-1d631d9bb1ff-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- when '1790874492615_1932433282087883453_2491859023578066936_19c5d2b91acfa6c3c12bd34ec4155932.jpg' -%}
+{%- if image_version == '1790874724' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-4d611d54cf3e-352.avif' | asset_url }} 352w, {{ 'cober-mobile-4d611d54cf3e-480.avif' | asset_url }} 480w, {{ 'cober-mobile-4d611d54cf3e-600.avif' | asset_url }} 600w, {{ 'cober-mobile-4d611d54cf3e-832.avif' | asset_url }} 832w, {{ 'cober-mobile-4d611d54cf3e-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-4d611d54cf3e-352.webp' | asset_url }} 352w, {{ 'cober-mobile-4d611d54cf3e-480.webp' | asset_url }} 480w, {{ 'cober-mobile-4d611d54cf3e-600.webp' | asset_url }} 600w, {{ 'cober-mobile-4d611d54cf3e-832.webp' | asset_url }} 832w, {{ 'cober-mobile-4d611d54cf3e-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- when '2bbdc95a2e36ae68f727.jpg' -%}
+{%- if image_version == '1790438913' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-314cc6934bb8-352.avif' | asset_url }} 352w, {{ 'cober-mobile-314cc6934bb8-480.avif' | asset_url }} 480w, {{ 'cober-mobile-314cc6934bb8-600.avif' | asset_url }} 600w, {{ 'cober-mobile-314cc6934bb8-832.avif' | asset_url }} 832w, {{ 'cober-mobile-314cc6934bb8-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-314cc6934bb8-352.webp' | asset_url }} 352w, {{ 'cober-mobile-314cc6934bb8-480.webp' | asset_url }} 480w, {{ 'cober-mobile-314cc6934bb8-600.webp' | asset_url }} 600w, {{ 'cober-mobile-314cc6934bb8-832.webp' | asset_url }} 832w, {{ 'cober-mobile-314cc6934bb8-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- when '1790438614676_1932433282087883453_2491859023578066936_751831472e5bfbbb409563828cfd81d2.jpg' -%}
+{%- if image_version == '1790438706' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-9d11aa26cc5d-352.avif' | asset_url }} 352w, {{ 'cober-mobile-9d11aa26cc5d-480.avif' | asset_url }} 480w, {{ 'cober-mobile-9d11aa26cc5d-600.avif' | asset_url }} 600w, {{ 'cober-mobile-9d11aa26cc5d-832.avif' | asset_url }} 832w, {{ 'cober-mobile-9d11aa26cc5d-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-9d11aa26cc5d-352.webp' | asset_url }} 352w, {{ 'cober-mobile-9d11aa26cc5d-480.webp' | asset_url }} 480w, {{ 'cober-mobile-9d11aa26cc5d-600.webp' | asset_url }} 600w, {{ 'cober-mobile-9d11aa26cc5d-832.webp' | asset_url }} 832w, {{ 'cober-mobile-9d11aa26cc5d-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- when 'aca30dee609ee0c0b98f.jpg' -%}
+{%- if image_version == '1790959124' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-a53ad1d2950f-352.avif' | asset_url }} 352w, {{ 'cober-mobile-a53ad1d2950f-480.avif' | asset_url }} 480w, {{ 'cober-mobile-a53ad1d2950f-600.avif' | asset_url }} 600w, {{ 'cober-mobile-a53ad1d2950f-832.avif' | asset_url }} 832w, {{ 'cober-mobile-a53ad1d2950f-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-a53ad1d2950f-352.webp' | asset_url }} 352w, {{ 'cober-mobile-a53ad1d2950f-480.webp' | asset_url }} 480w, {{ 'cober-mobile-a53ad1d2950f-600.webp' | asset_url }} 600w, {{ 'cober-mobile-a53ad1d2950f-832.webp' | asset_url }} 832w, {{ 'cober-mobile-a53ad1d2950f-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- when '1790186033890_1932433282087883453_2491859023578066936_e216d8706ec0dd91d0ce92c5d96aa05e.jpg' -%}
+{%- if image_version == '1790186099' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-0d6ddf790588-352.avif' | asset_url }} 352w, {{ 'cober-mobile-0d6ddf790588-480.avif' | asset_url }} 480w, {{ 'cober-mobile-0d6ddf790588-600.avif' | asset_url }} 600w, {{ 'cober-mobile-0d6ddf790588-832.avif' | asset_url }} 832w, {{ 'cober-mobile-0d6ddf790588-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-0d6ddf790588-352.webp' | asset_url }} 352w, {{ 'cober-mobile-0d6ddf790588-480.webp' | asset_url }} 480w, {{ 'cober-mobile-0d6ddf790588-600.webp' | asset_url }} 600w, {{ 'cober-mobile-0d6ddf790588-832.webp' | asset_url }} 832w, {{ 'cober-mobile-0d6ddf790588-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- when '8fac451d246da433fd7c.jpg' -%}
+{%- if image_version == '1790958067' -%}
+<source media="(max-width: 749px)" type="image/avif" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-577c1edf87d8-352.avif' | asset_url }} 352w, {{ 'cober-mobile-577c1edf87d8-480.avif' | asset_url }} 480w, {{ 'cober-mobile-577c1edf87d8-600.avif' | asset_url }} 600w, {{ 'cober-mobile-577c1edf87d8-832.avif' | asset_url }} 832w, {{ 'cober-mobile-577c1edf87d8-1200.avif' | asset_url }} 1200w
+">
+<source media="(max-width: 749px)" type="image/webp" sizes="{{ sizes | default: '100vw' }}" srcset="
+{{ 'cober-mobile-577c1edf87d8-352.webp' | asset_url }} 352w, {{ 'cober-mobile-577c1edf87d8-480.webp' | asset_url }} 480w, {{ 'cober-mobile-577c1edf87d8-600.webp' | asset_url }} 600w, {{ 'cober-mobile-577c1edf87d8-832.webp' | asset_url }} 832w, {{ 'cober-mobile-577c1edf87d8-1200.webp' | asset_url }} 1200w
+">
+{%- endif -%}
+{%- endcase -%}

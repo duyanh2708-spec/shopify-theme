@@ -1,3 +1,4 @@
+<script src="{{ 'cober-service-contact.js' | asset_url }}" defer></script>
 
 
 {% capture submit_button %}
@@ -125,6 +126,7 @@
     <textarea
       rows="10"
       id="ContactForm-body"
+      data-cober-service-message
       class="contact-form__input contact-form__input--textarea"
       name="contact[body]"
       placeholder="{{ 'blocks.contact_form.comment' | t }}"

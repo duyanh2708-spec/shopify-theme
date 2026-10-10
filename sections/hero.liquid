@@ -148,6 +148,8 @@
     </picture>
   {%- elsif media_1 == 'image' -%}
     <div class="{{ media_wrapper_desktop_class }}">
+      <picture style="display: contents;">
+        {% render 'cober-mobile-image-source', image: section.settings.image_1, sizes: sizes %}
       {{
         section.settings.image_1
         | image_url: width: 3840
@@ -161,6 +163,7 @@
           fetchpriority: fetch_priority,
           data-testid: 'hero-desktop-image-1'
       }}
+      </picture>
     </div>
   {%- endif -%}
 
@@ -252,6 +255,8 @@
     </picture>
   {%- elsif media_2 == 'image' -%}
     <div class="{{ media_wrapper_desktop_class }}">
+      <picture style="display: contents;">
+        {% render 'cober-mobile-image-source', image: section.settings.image_2, sizes: sizes %}
       {{
         section.settings.image_2
         | image_url: width: 3840
@@ -265,6 +270,7 @@
           fetchpriority: fetch_priority,
           data-testid: 'hero-desktop-image-2'
       }}
+      </picture>
     </div>
   {%- endif -%}
 
